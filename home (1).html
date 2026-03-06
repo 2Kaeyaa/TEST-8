@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>My Projects</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #0e0e0e;
+    font-family: 'DM Mono', monospace;
+    color: #d4d4d4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2rem, 6vw, 3.2rem);
+    color: #fff;
+    margin-bottom: 8px;
+    letter-spacing: -0.01em;
+  }
+
+  .sub {
+    font-size: 0.65rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #555;
+    margin-bottom: 48px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    width: 100%;
+    max-width: 780px;
+  }
+
+  a.card {
+    display: block;
+    background: #161616;
+    border: 1px solid #2a2a2a;
+    border-radius: 6px;
+    padding: 28px 24px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.2s, transform 0.15s, background 0.2s;
+  }
+  a.card:hover {
+    border-color: #f5a623;
+    background: #1a1a1a;
+    transform: translateY(-3px);
+  }
+
+  .card-icon { font-size: 1.8rem; margin-bottom: 14px; }
+  .card-title { font-size: 0.85rem; font-weight: 500; color: #fff; margin-bottom: 6px; }
+  .card-desc  { font-size: 0.67rem; color: #666; line-height: 1.6; letter-spacing: 0.02em; }
+  .card-link  { font-size: 0.62rem; color: #f5a623; margin-top: 14px; letter-spacing: 0.1em; }
+
+  footer {
+    margin-top: 48px;
+    font-size: 0.62rem;
+    color: #333;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+  <h1>My Projects</h1>
+  <p class="sub">GitHub Pages · HTML Collection</p>
+
+  <div class="cards">
+
+    <a class="card" href="index.html">
+      <div class="card-icon">📊</div>
+      <div class="card-title">Quarterly Report</div>
+      <div class="card-desc">Interactive financial dashboard with bar, donut, and line charts across 3 years.</div>
+      <div class="card-link">OPEN →</div>
+    </a>
+
+    <a class="card" href="codepad.html">
+      <div class="card-icon">💻</div>
+      <div class="card-title">CodePad</div>
+      <div class="card-desc">Live coding playground supporting JavaScript, HTML preview, and Python simulation.</div>
+      <div class="card-link">OPEN →</div>
+    </a>
+
+    <a class="card" href="turtle_visualizer.html">
+      <div class="card-icon">🌌</div>
+      <div class="card-title">Galaxy Visualizer</div>
+      <div class="card-desc">Rainbow spiral galaxy drawn stroke-by-stroke with live Python code walkthrough.</div>
+      <div class="card-link">OPEN →</div>
+    </a>
+
+  </div>
+
+  <footer>Hosted on GitHub Pages · Free</footer>
+
+</body>
+</html>
